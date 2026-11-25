@@ -1,681 +1,80 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Apna Mool Pachhan – The Journey Within Begins Here</title>
-
-<meta name="description" content="Welcome to Apna Mool Pachhan. Explore Bhakti, Waheguru Naam Simran, Gurbani Vichar, Katha, meditation, Dhyan, spiritual Sadhna, inner peace and self-realisation.">
-
-<meta name="keywords" content="Apna Mool Pachhan, Bhakti, Waheguru Naam Simran, Gurbani Vichar, Gurbani Katha, Meditation, Dhyan, Spirituality, Inner Peace, Self Realisation, Sikh Wisdom">
-
-<meta name="author" content="Apna Mool Pachhan">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#ffffff">
-
-<link rel="canonical" href="https://apnamoolpachhan.github.io/">
-
-<meta property="og:title" content="Apna Mool Pachhan">
-<meta property="og:description" content="Discover your true self. Connect with the Divine. Experience Inner Peace.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://apnamoolpachhan.github.io/">
-
-<!--
-GOOGLE ADSENSE:
-When Google provides your AdSense code,
-paste the exact code inside this HEAD section.
-Do not use a made-up publisher ID.
--->
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background: #fffefa;
-  color: #333333;
-  line-height: 1.8;
-}
-
-header {
-  text-align: center;
-  padding: 32px 15px;
-  background: #ffffff;
-  border-bottom: 3px solid #c6a04a;
-}
-
-.logo {
-  font-family: Georgia, serif;
-  font-size: 34px;
-  font-weight: bold;
-  color: #a77b22;
-  letter-spacing: 1px;
-}
-
-.tagline {
-  color: #666;
-  font-size: 15px;
-  margin-top: 5px;
-}
-
-nav {
-  background: #a77b22;
-  padding: 13px 8px;
-  text-align: center;
-}
-
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  display: inline-block;
-  padding: 5px 12px;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: #ffe7a1;
-  text-decoration: underline;
-}
-
-.hero {
-  text-align: center;
-  padding: 75px 20px;
-  background: linear-gradient(135deg, #fffdf5, #f2e5c7);
-}
-
-.hero h1 {
-  font-family: Georgia, serif;
-  font-size: 40px;
-  color: #a77b22;
-  margin-bottom: 12px;
-}
-
-.hero h2 {
-  font-size: 25px;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.hero p {
-  max-width: 750px;
-  margin: auto;
-  font-size: 17px;
-}
-
-.button {
-  display: inline-block;
-  background: #a77b22;
-  color: white;
-  text-decoration: none;
-  padding: 12px 28px;
-  margin-top: 25px;
-  border-radius: 5px;
-}
-
-.button:hover {
-  background: #805b19;
-}
-
-section {
-  padding: 55px 7%;
-  text-align: center;
-}
-
-.section-title {
-  font-family: Georgia, serif;
-  color: #a77b22;
-  font-size: 29px;
-  margin-bottom: 18px;
-}
-
-.intro {
-  max-width: 900px;
-  margin: auto;
-}
-
-.intro p {
-  margin-bottom: 20px;
-  font-size: 16px;
-}
-
-.description {
-  background: #ffffff;
-}
-
-.description-list {
-  text-align: left;
-  max-width: 720px;
-  margin: 20px auto;
-  padding-left: 15px;
-}
-
-.description-list p {
-  margin-bottom: 5px;
-}
-
-.quote {
-  padding: 42px 20px;
-  background: #f8f0dd;
-  text-align: center;
-  color: #805d1c;
-}
-
-.quote h2 {
-  font-size: 25px;
-  margin-bottom: 8px;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 22px;
-  max-width: 1150px;
-  margin: 30px auto 0;
-}
-
-.card {
-  background: #ffffff;
-  border: 1px solid #eadbb5;
-  border-radius: 10px;
-  padding: 25px 20px;
-  box-shadow: 0 3px 12px rgba(0,0,0,0.04);
-}
-
-.card h3 {
-  color: #a77b22;
-  font-size: 20px;
-  margin-bottom: 12px;
-}
-
-.card p {
-  font-size: 15px;
-}
-
-.card a {
-  color: #a77b22;
-  text-decoration: none;
-}
-
-.card a:hover {
-  text-decoration: underline;
-}
-
-.alternate {
-  background: #fbf7ed;
-}
-
-.mission {
-  background: #f8f0dd;
-}
-
-footer {
-  background: #29251e;
-  color: #ffffff;
-  text-align: center;
-  padding: 35px 15px;
-}
-
-footer h2 {
-  color: #e4c47a;
-  margin-bottom: 8px;
-}
-
-footer a {
-  color: #e4c47a;
-  text-decoration: none;
-  margin: 5px 9px;
-  display: inline-block;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-.copyright {
-  font-size: 13px;
-  margin-top: 22px;
-  color: #cccccc;
-}
-
-@media(max-width:600px) {
-  .logo {
-    font-size: 25px;
-  }
-
-  .hero {
-    padding: 50px 18px;
-  }
-
-  .hero h1 {
-    font-size: 30px;
-  }
-
-  .hero h2 {
-    font-size: 21px;
-  }
-
-  nav a {
-    padding: 5px 7px;
-    font-size: 13px;
-  }
-
-  section {
-    padding: 40px 5%;
-  }
-
-  .section-title {
-    font-size: 25px;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apna Mool Pachhan - ਆਪਣਾ ਮੂਲ ਪਛਾਣ</title>
+  <meta name="description" content="Apna Mool Pachhan - Know your roots, your village, your family history.">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI', Arial, sans-serif;}
+    body{background:#fffdf5;color:#222;line-height:1.6;}
+    header{background:#1a5d1a;color:#fff;padding:15px 20px;position:sticky;top:0;z-index:1000;display:flex;justify-content:space-between;align-items:center;}
+    header h1{font-size:22px;} header h1 span{color:#ffcc00;}
+    nav a{color:#fff;text-decoration:none;margin-left:15px;font-weight:500;} nav a:hover{color:#ffcc00;}
+    .hero{background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');background-size:cover;background-position:center;color:#fff;text-align:center;padding:100px 20px;}
+    .hero h2{font-size:38px;margin-bottom:10px;} .hero p{font-size:18px;max-width:700px;margin:10px auto;}
+    .btn{display:inline-block;margin-top:20px;background:#ffcc00;color:#000;padding:12px 25px;border-radius:25px;text-decoration:none;font-weight:bold;}
+    .section{max-width:1100px;margin:50px auto;padding:0 20px;} .section h2{text-align:center;color:#1a5d1a;margin-bottom:25px;font-size:30px;}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;} .card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 4px 12px rgba(0,0,0,.1);text-align:center;border-top:4px solid #1a5d1a;} .card h3{color:#1a5d1a;margin-bottom:10px;}
+    .about{background:#f7f7e8;padding:50px 20px;} .contact{background:#1a5d1a;color:#fff;padding:40px 20px;text-align:center;} .contact a{color:#ffcc00;text-decoration:none;font-weight:bold;font-size:19px;}
+    footer{background:#111;color:#aaa;text-align:center;padding:15px;font-size:14px;} footer a{color:#ffcc00;text-decoration:none;margin:0 6px;}
+    input,textarea{width:100%;padding:12px;margin-top:8px;border-radius:8px;border:1px solid #ccc;} form{max-width:600px;margin:20px auto;text-align:left;background:#fff;padding:20px;border-radius:10px;color:#000;} form button{width:100%;background:#1a5d1a;color:#fff;padding:12px;border:none;border-radius:8px;margin-top:15px;font-size:16px;}
+  </style>
 </head>
-
 <body>
-
-<!-- HEADER -->
-
 <header>
-  <div class="logo">APNA MOOL PACHHAN</div>
-  <p class="tagline">
-    The Journey Within Begins Here
-  </p>
+  <h1>Apna <span>Mool Pachhan</span></h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Pind &amp; Itihas</a>
+    <a href="#contact">Contact</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+  </nav>
 </header>
 
-<!-- NAVIGATION -->
+<section class="hero" id="home">
+  <h2>ਆਪਣਾ ਮੂਲ ਪਛਾਣੋ</h2>
+  <h2>Know Your Roots</h2>
+  <p>We help you find your ancestral village, family history (Bansawali), and cultural heritage of Punjab.</p>
+  <a href="#contact" class="btn">Contact Us Now</a>
+</section>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#description">Description</a>
-  <a href="#bhakti">Bhakti</a>
-  <a href="#gurbani">Gurbani</a>
-  <a href="#meditation">Meditation</a>
-  <a href="#about">About Us</a>
-  <a href="#contact">Contact</a>
-</nav>
+<section class="section" id="about">
+  <h2>About Us</h2>
+  <p style="text-align:center;max-width:800px;margin:0 auto;"><strong>Apna Mool Pachhan</strong> is a mission to connect Punjabis across the world with their roots. Many families migrated after 1947, but their hearts still belong to their pind. We help you trace your family tree, find your ancestral village, Gotra, and Jathera history. Our aim is to preserve Punjab's Virsa for next generations.</p>
+</section>
 
-<!-- HERO -->
-
-<div class="hero" id="home">
-
-  <h1>ਆਪਣਾ ਮੂਲ ਪਛਾਣ</h1>
-
-  <h2>Discover Your True Self</h2>
-
-  <p>
-    Welcome to Apna Mool Pachhan 🙏
-    Let's begin the beautiful journey within,
-    towards peace, happiness and self-realisation.
-  </p>
-
-  <a href="#description" class="button">
-    Explore Our Spiritual Journey
-  </a>
-
+<div class="about">
+  <div class="section">
+    <h2>Our Services</h2>
+    <div class="grid" id="services">
+      <div class="card"><h3>🏡 Pind Khoj</h3><p>We help you find your ancestral village location, map, and history with old records.</p></div>
+      <div class="card"><h3>🌳 Bansawali / Family Tree</h3><p>We create your family tree / Bansawali based on family interviews and available records.</p></div>
+      <div class="card"><h3>📜 Itihas &amp; Virsa</h3><p>Information about Sikh history, Jathera, Gotra, and cultural heritage of your clan.</p></div>
+      <div class="card"><h3>🤝 NRI Help</h3><p>Special help for NRIs who want to visit their pind or connect with relatives in Punjab.</p></div>
+    </div>
+  </div>
 </div>
 
-<!-- COMPLETE ORIGINAL DESCRIPTION -->
-
-<section id="description" class="description">
-
-  <h2 class="section-title">Description</h2>
-
-  <div class="intro">
-
-    <p>Welcome to Apna Mool Pachhan 🙏</p>
-
-    <p>
-      Let's begin the beautiful journey within,
-      towards peace, happiness and self-realisation.
-    </p>
-
-    <p>
-      Apna Mool Pachhan is a spiritual space
-      dedicated to exploring the path of devotion,
-      meditation and inner awakening.
-    </p>
-
-    <p>Here, you will discover inspiring content on:</p>
-
-    <div class="description-list">
-
-      <p>- 🙏 Bhakti and Devotion</p>
-      <p>- 🙏 Waheguru Naam Simran</p>
-      <p>- 📖 Gurbani Vichar and Katha</p>
-      <p>- 🧘 Meditation and Meditation Techniques</p>
-      <p>- ✨ Dhyan and Spiritual Sadhna</p>
-      <p>- 🌸 Inner Peace and Self-Realisation</p>
-      <p>- 💗 True Happiness and Positive Living</p>
-      <p>- 🙏 Spiritual Wisdom and Divine Teachings</p>
-
-    </div>
-
-    <p>
-      Our aim is to inspire you to connect with your
-      inner self, experience the beauty of Naam Simran,
-      understand the wisdom of Gurbani and bring peace,
-      positivity and happiness into everyday life.
-    </p>
-
-    <p>
-      Discover your true self. Connect with the
-      Divine. Experience Inner Peace.
-    </p>
-
-    <p>
-      🌸 Apna Mool Pachhan – The Journey Within
-      Begins Here!
-    </p>
-
-  </div>
-
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p style="text-align:center;">Have a question? Want to find your roots? Send us a message.</p>
+  <form action="mailto:sidhugurmit1982@gmail.com" method="post" enctype="text/plain">
+    <label>Your Name</label><input type="text" name="Name" required placeholder="Enter your full name">
+    <label>Your Village / City</label><input type="text" name="Village" placeholder="e.g. Pind: XYZ, District: Amritsar">
+    <label>Your Email / Phone</label><input type="text" name="Contact" required placeholder="Enter email or phone">
+    <label>Your Message</label><textarea name="Message" rows="4" required placeholder="Tell us about your family history..."></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <div style="margin-top:20px;text-align:center;"><p>Direct Email: <strong>sidhugurmit1982@gmail.com</strong></p><p>Website: https://apnamoolpachhan.github.io</p></div>
 </section>
 
-<!-- GURBANI QUOTE -->
-
-<div class="quote">
-
-  <h2>ਮਨ ਤੂੰ ਜੋਤਿ ਸਰੂਪੁ ਹੈ ਆਪਣਾ ਮੂਲੁ ਪਛਾਣੁ ॥</h2>
-
-  <p>Recognise your true essence.</p>
-
-</div>
-
-<!-- BHAKTI -->
-
-<section id="bhakti">
-
-  <h2 class="section-title">
-    Bhakti and Devotion
-  </h2>
-
-  <div class="intro">
-    <p>
-      Explore the path of devotion, love, humility
-      and surrender. Discover the importance of
-      remembering the Divine in everyday life.
-    </p>
-  </div>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Bhakti and Devotion</h3>
-      <p>
-        Explore devotion, faith, love and the
-        spiritual journey within.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Waheguru Naam Simran</h3>
-      <p>
-        Discover the beauty and significance of
-        Naam Simran and remembrance of Waheguru.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- GURBANI -->
-
-<section id="gurbani" class="alternate">
-
-  <h2 class="section-title">
-    Gurbani Vichar and Katha
-  </h2>
-
-  <div class="intro">
-    <p>
-      Gurbani provides timeless spiritual wisdom
-      and guidance for life. Explore Gurbani Vichar,
-      Shabad Katha and the teachings of Sri Guru
-      Granth Sahib Ji.
-    </p>
-  </div>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Gurbani Vichar</h3>
-      <p>
-        Explore the meanings and messages of
-        Gurbani through thoughtful explanations.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Gurbani Katha</h3>
-      <p>
-        Discover spiritual discussions and
-        interpretations of Gurbani teachings.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Shabad Wisdom</h3>
-      <p>
-        Understand the spiritual message of
-        Gurbani Shabads and their relevance to life.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- MEDITATION -->
-
-<section id="meditation">
-
-  <h2 class="section-title">
-    Meditation and Meditation Techniques
-  </h2>
-
-  <div class="intro">
-    <p>
-      Explore meditation, awareness, concentration
-      and different approaches to understanding
-      the mind and developing inner stillness.
-    </p>
-  </div>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Meditation</h3>
-      <p>
-        Discover meditation and its role in
-        awareness and inner calm.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Dhyan</h3>
-      <p>
-        Explore the meaning of Dhyan and
-        spiritual attention.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Spiritual Sadhna</h3>
-      <p>
-        Learn about spiritual discipline,
-        reflection and devotion.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- INNER PEACE -->
-
-<section class="alternate">
-
-  <h2 class="section-title">
-    Inner Peace and Self-Realisation
-  </h2>
-
-  <div class="intro">
-    <p>
-      The journey within encourages self-awareness,
-      compassion, understanding and a deeper
-      appreciation of life.
-    </p>
-  </div>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Inner Peace</h3>
-      <p>
-        Explore the importance of peace,
-        contentment and spiritual understanding.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Self-Realisation</h3>
-      <p>
-        Discover teachings about self-knowledge
-        and the deeper purpose of life.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Positive Living</h3>
-      <p>
-        Encourage kindness, gratitude,
-        compassion and positive thinking.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-<!-- SPIRITUAL WISDOM -->
-
-<section>
-
-  <h2 class="section-title">
-    Spiritual Wisdom and Divine Teachings
-  </h2>
-
-  <div class="intro">
-    <p>
-      Explore spiritual ideas and teachings that
-      encourage love, humanity, humility,
-      awareness and a meaningful way of living.
-    </p>
-  </div>
-
-</section>
-
-<!-- ABOUT -->
-
-<section id="about" class="mission">
-
-  <h2 class="section-title">About Apna Mool Pachhan</h2>
-
-  <div class="intro">
-
-    <p>
-      Apna Mool Pachhan is dedicated to sharing
-      spiritual knowledge and encouraging people
-      to explore the journey within.
-    </p>
-
-    <p>
-      Our focus is on Bhakti, Waheguru Naam Simran,
-      Gurbani Vichar, meditation, spiritual wisdom,
-      inner peace and self-realisation.
-    </p>
-
-    <p>
-      We aim to share meaningful spiritual content
-      that inspires people to live with love,
-      kindness, humility and awareness.
-    </p>
-
-  </div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section id="contact">
-
-  <h2 class="section-title">Contact Us</h2>
-
-  <div class="intro">
-
-    <p>
-      Thank you for visiting Apna Mool Pachhan.
-      We value your interest and feedback.
-    </p>
-
-    <p>
-      For questions, suggestions or enquiries,
-      please contact us through our official
-      contact email.
-    </p>
-
-    <!-- Add your real contact email here -->
-
-  </div>
-
-</section>
-
-<!-- FOOTER -->
+<div class="contact"><h2>Apna Mool Pachhan</h2><p>Preserving Punjab's Heritage, Connecting Families</p><p style="margin-top:10px;">Email: <a href="mailto:sidhugurmit1982@gmail.com">sidhugurmit1982@gmail.com</a></p></div>
 
 <footer>
-
-  <h2>APNA MOOL PACHHAN</h2>
-
-  <p>The Journey Within Begins Here!</p>
-
-  <p>
-    Discover your true self.
-    Connect with the Divine.
-    Experience Inner Peace.
-  </p>
-
-  <div style="margin-top:20px">
-
-    <a href="#home">Home</a>
-
-    <a href="#about">About Us</a>
-
-    <a href="#contact">Contact Us</a>
-
-    <a href="privacy-policy.html">Privacy Policy</a>
-
-    <a href="disclaimer.html">Disclaimer</a>
-
-    <a href="terms.html">Terms and Conditions</a>
-
-  </div>
-
-  <p class="copyright">
-    © 2026 Apna Mool Pachhan.
-    All Rights Reserved.
-  </p>
-
+  © 2026 apnamoolpachhan.github.io - All Rights Reserved | Made with ❤️ for Punjab<br>
+  <a href="index.html">Home</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a> | <a href="privacy-policy.html">Privacy Policy</a>
 </footer>
-
 </body>
 </html>
