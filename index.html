@@ -1,524 +1,79 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Apna Mool Pachhan | Discover Your True Self</title>
-
 <meta name="description" content="Explore Gurbani, Sikhism, Waheguru Simran, Naam Simran, meditation, Samadhi and spiritual wisdom at Apna Mool Pachhan. Discover your true self and inner peace.">
-
 <meta name="keywords" content="Apna Mool Pachhan, Gurbani, Sikhism, Waheguru Simran, Naam Simran, Meditation, Samadhi, Spirituality, Self Realisation">
-
 <meta name="author" content="Apna Mool Pachhan">
-
 <meta name="robots" content="index, follow">
-
 <link rel="canonical" href="https://apnamoolpachhan.github.io/">
-
 <style>
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background: #faf9f6;
-    color: #333;
-    line-height: 1.8;
-}
-
-header {
-    background: #111827;
-    color: white;
-    text-align: center;
-    padding: 35px 15px;
-}
-
-header h1 {
-    color: #e8c46a;
-    font-size: 34px;
-    letter-spacing: 2px;
-}
-
-header h2 {
-    font-size: 25px;
-}
-
-header p {
-    color: #e8c46a;
-    font-size: 18px;
-}
-
-nav {
-    background: #253247;
-    padding: 14px 10px;
-    text-align: center;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 7px 12px;
-    display: inline-block;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #e8c46a;
-}
-
-.hero {
-    background: linear-gradient(135deg, #182333, #536477);
-    color: white;
-    text-align: center;
-    padding: 75px 20px;
-}
-
-.hero h2 {
-    color: #f1cf79;
-    font-size: 32px;
-    margin-bottom: 18px;
-}
-
-.hero p {
-    max-width: 800px;
-    margin: auto;
-    font-size: 18px;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px 20px;
-}
-
-section {
-    margin-bottom: 35px;
-}
-
-section > h2 {
-    color: #26384c;
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 22px;
-}
-
-.intro {
-    text-align: center;
-    font-size: 17px;
-}
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 22px;
-}
-
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    border-bottom: 4px solid #d4ad57;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
-}
-
-.card h3 {
-    color: #34495e;
-    margin-bottom: 12px;
-}
-
-.card p {
-    color: #555;
-}
-
-.about-section {
-    background: #f0eee8;
-    padding: 45px 20px;
-}
-
-.about-inner {
-    max-width: 950px;
-    margin: auto;
-    text-align: center;
-}
-
-.about-inner h2 {
-    color: #26384c;
-    margin-bottom: 18px;
-}
-
-.mission {
-    text-align: center;
-}
-
-.mission p {
-    margin-bottom: 12px;
-}
-
-.contact {
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
-}
-
-.contact h2 {
-    color: #26384c;
-    margin-bottom: 15px;
-}
-
-a {
-    color: #a77b27;
-}
-
-footer {
-    background: #111827;
-    color: white;
-    text-align: center;
-    padding: 35px 15px;
-}
-
-footer h3 {
-    margin-bottom: 10px;
-}
-
-footer a {
-    color: #e8c46a;
-    text-decoration: none;
-    display: inline-block;
-    margin: 8px 12px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-footer p {
-    margin-top: 12px;
-}
-
-@media(max-width:600px) {
-
-    header h1 {
-        font-size: 25px;
-    }
-
-    header h2 {
-        font-size: 21px;
-    }
-
-    .hero {
-        padding: 50px 18px;
-    }
-
-    .hero h2 {
-        font-size: 25px;
-    }
-
-    nav a {
-        margin: 5px 7px;
-        font-size: 14px;
-    }
-
-    .container {
-        padding: 28px 15px;
-    }
-
-    .card {
-        padding: 20px;
-    }
-
-}
-
+:root{--navy:#182238;--blue:#2d4059;--gold:#d8ad55;--cream:#fffaf0;--paper:#f7f5ef;--ink:#252a34;--muted:#657085;--white:#fff}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Inter,"Segoe UI",Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.75}
+a{color:#9a741d}a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.site-header{background:linear-gradient(120deg,#131a2b,#263858);color:var(--white);text-align:center;padding:42px 18px 38px;border-bottom:4px solid var(--gold)}
+.site-header h1{font-size:clamp(30px,5vw,48px);line-height:1.15;letter-spacing:3px;color:#f2ce7a}.site-header h2{margin-top:8px;font-size:clamp(21px,3vw,29px);font-weight:600}.site-header p{margin-top:6px;color:#f4dea7;font-size:18px}
+nav{position:sticky;top:0;z-index:10;background:rgba(37,54,79,.97);backdrop-filter:blur(8px);box-shadow:0 4px 16px rgba(24,34,56,.12)}
+nav .nav-inner{max-width:1100px;margin:auto;display:flex;justify-content:center;flex-wrap:wrap;padding:9px 12px}nav a{color:var(--white);text-decoration:none;margin:3px 5px;padding:7px 12px;border-radius:999px;font-weight:700;font-size:15px}nav a:hover,nav a[aria-current="page"]{background:rgba(216,173,85,.18);color:#f5d58c}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,rgba(24,34,56,.96),rgba(72,92,119,.92)),radial-gradient(circle at top right,#fff 0,transparent 35%);color:var(--white);text-align:center;padding:78px 20px}.hero::after{content:"";position:absolute;width:280px;height:280px;border:1px solid rgba(216,173,85,.28);border-radius:50%;left:-120px;bottom:-170px}.hero h2{color:#f4d587;font-size:clamp(28px,5vw,42px);line-height:1.25;margin-bottom:16px}.hero p{max-width:790px;margin:auto;font-size:18px;color:#f8f7f2}
+.container{max-width:1100px;margin:auto;padding:48px 20px}section{margin-bottom:38px}section>h2{color:var(--navy);text-align:center;font-size:clamp(25px,4vw,32px);line-height:1.25;margin-bottom:24px}.intro{max-width:850px;margin:auto;text-align:center;font-size:17px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}.card{background:var(--white);padding:27px;border-radius:14px;border:1px solid rgba(24,34,56,.07);border-bottom:4px solid var(--gold);box-shadow:0 8px 24px rgba(24,34,56,.08);transition:transform .25s,box-shadow .25s}.card:hover{transform:translateY(-5px);box-shadow:0 14px 30px rgba(24,34,56,.12)}.card h3{color:var(--blue);margin-bottom:10px;font-size:20px}.card p{color:var(--muted)}
+.about-section{background:linear-gradient(135deg,#f2eee2,#fffaf0);padding:52px 20px;border-top:1px solid rgba(24,34,56,.06);border-bottom:1px solid rgba(24,34,56,.06)}.about-inner{max-width:900px;margin:auto;text-align:center}.about-inner h2{color:var(--navy);margin-bottom:16px}.about-inner p{color:var(--muted)}.about-inner>a{display:inline-block;margin-top:16px;text-decoration:none;background:var(--navy);color:var(--white);padding:10px 18px;border-radius:999px;font-weight:700}.about-inner>a:hover{background:#314866}
+.mission{text-align:center;max-width:850px;margin:auto}.mission p{margin-bottom:12px;color:var(--muted)}.contact{max-width:850px;margin:auto;background:var(--white);padding:34px;border-radius:14px;text-align:center;box-shadow:0 8px 24px rgba(24,34,56,.08);border:1px solid rgba(24,34,56,.06)}.contact h2{color:var(--navy);margin-bottom:12px}.contact p{margin:8px 0}.contact a{font-weight:700}.contact>.contact-link{display:inline-block;margin-top:12px;text-decoration:none;background:var(--navy);color:var(--white);padding:10px 18px;border-radius:999px}
+footer{background:#131a2b;color:var(--white);text-align:center;padding:38px 15px}footer h3{color:#f1d17e;margin-bottom:7px}footer div{margin:12px 0}footer a{color:#f1d17e;text-decoration:none;display:inline-block;margin:5px 10px}footer a:hover{text-decoration:underline}
+@media(max-width:600px){.site-header{padding:32px 12px}.hero{padding:58px 18px}.hero p{font-size:16px}.container{padding:38px 15px}.cards{grid-template-columns:1fr}.card{padding:22px}.contact{padding:26px 18px}nav .nav-inner{padding:8px 6px}nav a{font-size:13px;padding:6px 8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}}
 </style>
 </head>
-
 <body>
-
-<!-- HEADER -->
-
-<header>
-
-    <h1>APNA MOOL PACHHAN</h1>
-
-    <h2>ਆਪਣਾ ਮੂਲ ਪਛਾਣ</h2>
-
-    <p>Discover Your True Self</p>
-
+<header class="site-header">
+<h1>APNA MOOL PACHHAN</h1>
+<h2>ਆਪਣਾ ਮੂਲ ਪਛਾਣ</h2>
+<p>Discover Your True Self</p>
 </header>
-
-<!-- NAVIGATION -->
-
-<nav>
-
-    <a href="index.html">Home</a>
-
-    <a href="about.html">About Us</a>
-
-    <a href="contact.html">Contact Us</a>
-
-    <a href="privacy-policy.html">Privacy Policy</a>
-
-    <a href="disclaimer.html">Disclaimer</a>
-
-</nav>
-
-<!-- HERO SECTION -->
-
-<div class="hero" id="home">
-
-    <h2>A Journey Towards Inner Peace</h2>
-
-    <p>
-    Welcome to Apna Mool Pachhan.
-    Explore the timeless wisdom of Gurbani,
-    Sikh philosophy, Waheguru Simran,
-    Naam Simran, meditation and spirituality.
-
-    Discover peace, wisdom and happiness
-    through spiritual awareness and self-realisation.
-    </p>
-
-</div>
-
+<nav aria-label="Primary navigation"><div class="nav-inner">
+<a href="index.html" aria-current="page">Home</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a><a href="privacy-policy.html">Privacy Policy</a><a href="disclaimer.html">Disclaimer</a>
+</div></nav>
+<section class="hero" id="home">
+<h2>A Journey Towards Inner Peace</h2>
+<p>Welcome to Apna Mool Pachhan. Explore the timeless wisdom of Gurbani, Sikh philosophy, Waheguru Simran, Naam Simran, meditation and spirituality. Discover peace, wisdom and happiness through spiritual awareness and self-realisation.</p>
+</section>
 <main class="container">
-
-<!-- WELCOME SECTION -->
-
-<section>
-
-    <h2>Welcome to Apna Mool Pachhan</h2>
-
-    <p class="intro">
-
-    Apna Mool Pachhan is an independent spiritual
-    knowledge platform dedicated to sharing
-    meaningful spiritual teachings and knowledge.
-
-    Our purpose is to inspire people to understand
-    the deeper meaning of life, discover their
-    true nature and experience inner peace.
-
-    We believe that true happiness and peace
-    begin with self-awareness and spiritual understanding.
-
-    </p>
-
+<section aria-labelledby="welcome-heading">
+<h2 id="welcome-heading">Welcome to Apna Mool Pachhan</h2>
+<p class="intro">Apna Mool Pachhan is an independent spiritual knowledge platform dedicated to sharing meaningful spiritual teachings and knowledge. Our purpose is to inspire people to understand the deeper meaning of life, discover their true nature and experience inner peace. We believe that true happiness and peace begin with self-awareness and spiritual understanding.</p>
 </section>
-
-<!-- CATEGORIES -->
-
-<section id="categories">
-
-    <h2>Explore Our Spiritual Categories</h2>
-
-    <div class="cards">
-
-        <div class="card">
-
-            <h3>Gurbani and Sikhism</h3>
-
-            <p>
-            Explore the divine teachings of
-            Sri Guru Granth Sahib Ji and understand
-            their message in everyday life.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>Waheguru Simran</h3>
-
-            <p>
-            Discover the importance of remembering
-            Waheguru and developing a connection
-            with the Divine.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>Naam Simran</h3>
-
-            <p>
-            Learn about Naam Simran and its
-            importance in spiritual life
-            and inner awareness.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>Meditation and Samadhi</h3>
-
-            <p>
-            Explore meditation, inner silence,
-            concentration and spiritual awareness.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>Spiritual Wisdom</h3>
-
-            <p>
-            Discover meaningful spiritual ideas
-            about life, consciousness,
-            peace and self-realisation.
-            </p>
-
-        </div>
-
-        <div class="card">
-
-            <h3>Osho Teachings</h3>
-
-            <p>
-            Explore the teachings and ideas of Osho
-            about meditation, awareness
-            and consciousness.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-</main>
-
-<!-- ABOUT SECTION -->
-
-<div class="about-section" id="about">
-
-    <div class="about-inner">
-
-        <h2>About Apna Mool Pachhan</h2>
-
-        <p>
-        Apna Mool Pachhan means
-        "Recognise Your True Self".
-
-        Our website is dedicated to sharing
-        spiritual knowledge, Gurbani,
-        Sikh philosophy, Naam Simran,
-        meditation and self-realisation.
-
-        We aim to make spiritual knowledge
-        accessible and understandable to everyone.
-        </p>
-
-        <br>
-
-        <a href="about.html">Read More About Us</a>
-
-    </div>
-
+<section id="categories" aria-labelledby="categories-heading">
+<h2 id="categories-heading">Explore Our Spiritual Categories</h2>
+<div class="cards">
+<article class="card"><h3>Gurbani and Sikhism</h3><p>Explore the divine teachings of Sri Guru Granth Sahib Ji and understand their message in everyday life.</p></article>
+<article class="card"><h3>Waheguru Simran</h3><p>Discover the importance of remembering Waheguru and developing a connection with the Divine.</p></article>
+<article class="card"><h3>Naam Simran</h3><p>Learn about Naam Simran and its importance in spiritual life and inner awareness.</p></article>
+<article class="card"><h3>Meditation and Samadhi</h3><p>Explore meditation, inner silence, concentration and spiritual awareness.</p></article>
+<article class="card"><h3>Spiritual Wisdom</h3><p>Discover meaningful spiritual ideas about life, consciousness, peace and self-realisation.</p></article>
+<article class="card"><h3>Osho Teachings</h3><p>Explore the teachings and ideas of Osho about meditation, awareness and consciousness.</p></article>
 </div>
-
-<main class="container">
-
-<!-- MISSION SECTION -->
-
-<section id="mission">
-
-    <h2>Our Mission</h2>
-
-    <div class="mission">
-
-        <p>
-        Our mission is to spread spiritual knowledge,
-        awareness and positivity through meaningful
-        and informative content.
-        </p>
-
-        <p>
-        We aim to promote Gurbani, Naam Simran,
-        meditation, kindness, humility,
-        compassion and self-awareness.
-        </p>
-
-    </div>
-
 </section>
-
-<!-- CONTACT SECTION -->
-
-<section id="contact">
-
-    <div class="contact">
-
-        <h2>Contact Us</h2>
-
-        <p>
-        We welcome your suggestions,
-        questions and feedback.
-
-        For any enquiries regarding our website
-        or content, please contact us by email.
-        </p>
-
-        <p>
-        <strong>Email:</strong>
-
-        <a href="mailto:sidhugurmit1982@gmail.com">
-        sidhugurmit1982@gmail.com
-        </a>
-        </p>
-
-        <br>
-
-        <a href="contact.html">Visit Contact Us Page</a>
-
-    </div>
-
-</section>
-
 </main>
-
-<!-- FOOTER -->
-
+<section class="about-section" id="about" aria-labelledby="about-heading">
+<div class="about-inner"><h2 id="about-heading">About Apna Mool Pachhan</h2><p>Apna Mool Pachhan means "Recognise Your True Self". Our website is dedicated to sharing spiritual knowledge, Gurbani, Sikh philosophy, Naam Simran, meditation and self-realisation. We aim to make spiritual knowledge accessible and understandable to everyone.</p><br><a href="about.html">Read More About Us</a></div>
+</section>
+<main class="container">
+<section id="mission" aria-labelledby="mission-heading">
+<h2 id="mission-heading">Our Mission</h2><div class="mission"><p>Our mission is to spread spiritual knowledge, awareness and positivity through meaningful and informative content.</p><p>We aim to promote Gurbani, Naam Simran, meditation, kindness, humility, compassion and self-awareness.</p></div>
+</section>
+<section id="contact" aria-labelledby="contact-heading">
+<div class="contact"><h2 id="contact-heading">Contact Us</h2><p>We welcome your suggestions, questions and feedback.</p><p>For any enquiries regarding our website or content, please contact us by email.</p><p><strong>Email:</strong> <a href="mailto:sidhugurmit1982@gmail.com">sidhugurmit1982@gmail.com</a></p><a class="contact-link" href="contact.html">Visit Contact Us Page</a></div>
+</section>
+</main>
 <footer>
-
-    <h3>APNA MOOL PACHHAN</h3>
-
-    <p>Discover Your True Self</p>
-
-    <div>
-
-        <a href="index.html">Home</a>
-
-        <a href="about.html">About Us</a>
-
-        <a href="contact.html">Contact Us</a>
-
-        <a href="privacy-policy.html">Privacy Policy</a>
-
-        <a href="disclaimer.html">Disclaimer</a>
-
-    </div>
-
-    <p>
-    © 2026 Apna Mool Pachhan.
-    All Rights Reserved.
-    </p>
-
+<h3>APNA MOOL PACHHAN</h3><p>Discover Your True Self</p>
+<div><a href="index.html">Home</a><a href="about.html">About Us</a><a href="contact.html">Contact Us</a><a href="privacy-policy.html">Privacy Policy</a><a href="disclaimer.html">Disclaimer</a></div>
+<p>© 2026 Apna Mool Pachhan. All Rights Reserved.</p>
 </footer>
-
 </body>
 </html>
